@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+[class*="col"] {
+  float: left;
+  margin-left: 1%;
+}
+[class*="col"]:first-child {
+  margin-left: 0;
+}
+
+.col-1 {
+  width: 6.500000000000001%;
+}
+.col-2 {
+  width: 15.000000000000002%;
+}
+.col-3 {
+  width: 23.5%;
+}
+.col-4 {
+  width: 32%;
+}
+.col-5 {
+  width: 40.50000000000001%;
+}
+.col-6 {
+  width: 49%;
+}
+.col-7 {
+  width: 57.5%;
+}
+.col-8 {
+  width: 67%;
+}
+.col-9 {
+  width: 74.5%;
+}
+.col-10 {
+  width: 83.00000000000001%;
+}
+.col-11 {
+  width: 91.5%;
+}
+.col-12 {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+li a {
+  display: block;
+  padding: 10px 20px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+  color: black;
+  transition: all 0.4s;
+}
+
+li a:hover {
+  background: #ccc;
+}
+
+label {
+  font-size: 1em;
+}
+
+input {
+  display: block;
+  padding: 10px;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+#main {
+  padding: 20px;
+}
+
+.gray {
+  color: #ccc;
+}

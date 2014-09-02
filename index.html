@@ -4,21 +4,32 @@
   <meta charset="UTF-8">
   <title>Backbone Intro App</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/lib/jquery-min.js"></script>
-  <script src="js/lib/underscore-min.js"></script>
-  <script src="js/lib/backbone-min.js"></script>
+  <script src="js/lib/jquery.js"></script>
+  <script src="js/lib/underscore.js"></script>
+  <script src="js/lib/backbone.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/models/property.js"></script>
+  <script src="js/views/header-view.js"></script>
+  <script src="js/views/property-list-view.js"></script>
+  <script src="js/views/property-view.js"></script>
+  <script src="js/views/welcome-view.js"></script>
+  <script src="js/router.js"></script>
   <script src="js/app.js"></script>
 </head>
 <body>
-  <h1>Exceptional Realty Group</h1>
-
-  <script type="text/template" id="sidebar">
-    <ul id="property_list"></ul>
-  </script>
-
-  <script type="text/template" id="main">
-    <div id="property"></div>
-  </script>
-
+  <div class="container">
+    <div class="row">
+      <header class="col-12">
+        <h1>Exceptional Realty Group</h1>
+      </header>
+    </div>
+    <div class="row">
+      <aside class="col-4">
+        <section id="list"></section>
+        <section id="new"></section>
+      </aside>
+      <section id="main" class="col-8"></section>
+    </div>
+  </div>
 </body>
 </html>

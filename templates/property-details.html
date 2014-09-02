@@ -1,0 +1,22 @@
+<% if (id) { %>
+  <label>Id</label>
+  <input id="id" name="id" type="text" value="<%= id %>" class="gray" disabled>
+<% } %>
+
+<label>Street</label>
+<input id="street" name="street" type="text" value="<%= street %>" required>
+
+<label>City</label>
+<input id="city" name="city" type="text" value="<%= city %>" required>
+
+<label>State</label>
+<input id="state" name="state" type="text" value="<%= state %>" required>
+
+<label>Price $</label>
+<input id="price" name="price" type="text" value="<%= price %>" required>
+
+<label>Posted (ex: 2014 Oct 1)</label>
+<input id="posted" name="posted" type="text" value="<%= posted %>" required>
+
+<button id="save">Save</button>
+<button id="delete">Delete</button>

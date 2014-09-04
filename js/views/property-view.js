@@ -29,13 +29,9 @@ APP.PropertyView = Backbone.View.extend({
         }
       });
     } else {
-      // this.model.save(null, {
-      //   success: function() {
-      //     alert('Property was updated successfully.');
-      //   }
-      // });
-      this.model.save();
-      alert('Property was updated successfully.');
+      if (this.model.save()) {
+        alert('Property was updated successfully.');
+      }
     }
     return false;
   },

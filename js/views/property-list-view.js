@@ -20,11 +20,11 @@ APP.PropertyListItemView = Backbone.View.extend({
   tagName: 'li',
   initialize: function() {
     this.template = _.template( APP.GET_TEMPLATE('property-list-item') );
-    this.model.bind( 'change', this.render(), this);
-    this.model.bind( 'destroy', this.remove(), this);
+    this.model.bind( 'change', this.render, this);
+    this.model.bind( 'destroy', this.remove, this);
   },
   render: function() {
-    this.$el.html( this.template( this.model.toJSON()));
+    this.$el.html( this.template( this.model.toJSON() ) );
     return this.el;
   }
 });
